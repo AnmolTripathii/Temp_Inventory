@@ -203,7 +203,7 @@ function Products() {
                                                 onChange={(e) => setForm({ ...form, sku: e.target.value })}
                                                 className="w-full p-4 bg-white/70 backdrop-blur-sm border-2 border-gray-200 rounded-2xl shadow-lg focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 focus:outline-none transition-all duration-300 font-medium text-gray-800 placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
                                                 required
-                                                disabled={editingProduct} // Disable SKU editing to prevent conflicts
+                                                disabled={editingProduct}
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-0 group-focus-within:opacity-20 transition-opacity duration-300 -z-10"></div>
                                         </div>
@@ -239,9 +239,9 @@ function Products() {
                                                 type="number"
                                                 placeholder="Quantity in stock"
                                                 value={form.stockQty}
-                                                onChange={(e) => setForm({ ...form, stockQty: parseInt(e.target.value) || 0 })}
+                                                onChange={(e) => setForm({ ...form, stockQty: e.target.value })}
                                                 className="w-full p-4 bg-white/70 backdrop-blur-sm border-2 border-gray-200 rounded-2xl shadow-lg focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 focus:outline-none transition-all duration-300 font-medium text-gray-800 placeholder-gray-500"
-                                                min="1"
+                                                min="0"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-0 group-focus-within:opacity-20 transition-opacity duration-300 -z-10"></div>
                                         </div>
@@ -254,7 +254,7 @@ function Products() {
                                                 type="number"
                                                 placeholder="Reorder level"
                                                 value={form.reorderLevel}
-                                                onChange={(e) => setForm({ ...form, reorderLevel: parseInt(e.target.value) || 0 })}
+                                                onChange={(e) => setForm({ ...form, reorderLevel: e.target.value })}
                                                 className="w-full p-4 bg-white/70 backdrop-blur-sm border-2 border-gray-200 rounded-2xl shadow-lg focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 focus:outline-none transition-all duration-300 font-medium text-gray-800 placeholder-gray-500"
                                                 min="1"
                                             />
