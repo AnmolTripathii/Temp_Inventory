@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://temp-inventory-rb5q.vercel.app/api";
 
 export const api = {
   get: async (url) => {
