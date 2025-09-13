@@ -9,11 +9,16 @@ import reportRoutes from "./Routes/reportsRoutes.js";
 import recommendationAiRoutes from "./Routes/recommendationAi.js";
 
 // Load environment variables
-dotenv.config();
+dotenv.config({
+  path: "./.env",
+});
 
 // Debug environment variables
 console.log("🔍 Environment check:");
-console.log("MONGODB_URI:", process.env.MONGODB_URI ? "✅ Loaded" : "❌ Missing");
+console.log(
+  "MONGODB_URI:",
+  process.env.MONGODB_URI ? "✅ Loaded" : "❌ Missing"
+);
 console.log("DB_NAME:", process.env.DB_NAME || "Using default");
 console.log("PORT:", process.env.PORT || "Using default");
 
