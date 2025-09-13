@@ -268,12 +268,11 @@ function Products() {
                                         <div className="relative group">
                                             <input
                                                 type="number"
-                                                placeholder="0.00"
+                                                placeholder="Average cost per unit"
                                                 value={form.avgCost}
-                                                onChange={(e) => setForm({ ...form, avgCost: parseFloat(e.target.value) || 0 })}
+                                                onChange={(e) => setForm({ ...form, avgCost: e.target.value })}
                                                 className="w-full p-4 bg-white/70 backdrop-blur-sm border-2 border-gray-200 rounded-2xl shadow-lg focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 focus:outline-none transition-all duration-300 font-medium text-gray-800 placeholder-gray-500"
-                                                min="0"
-                                                step="1"
+                                                min="1"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-0 group-focus-within:opacity-20 transition-opacity duration-300 -z-10"></div>
                                         </div>
