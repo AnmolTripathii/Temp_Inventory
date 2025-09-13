@@ -8,12 +8,10 @@ import transactionRoutes from "./Routes/transactionRoutes.js";
 import reportRoutes from "./Routes/reportsRoutes.js";
 import recommendationAiRoutes from "./Routes/recommendationAi.js";
 
-// Load environment variables
 dotenv.config({
   path: "./.env",
 });
 
-// Debug environment variables
 console.log("🔍 Environment check:");
 console.log(
   "MONGODB_URI:",
