@@ -8,7 +8,14 @@ import transactionRoutes from "./Routes/transactionRoutes.js";
 import reportRoutes from "./Routes/reportsRoutes.js";
 import recommendationAiRoutes from "./Routes/recommendationAi.js";
 
-dotenv.config({ path: "./.env" });
+// Load environment variables
+dotenv.config();
+
+// Debug environment variables
+console.log("🔍 Environment check:");
+console.log("MONGODB_URI:", process.env.MONGODB_URI ? "✅ Loaded" : "❌ Missing");
+console.log("DB_NAME:", process.env.DB_NAME || "Using default");
+console.log("PORT:", process.env.PORT || "Using default");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
