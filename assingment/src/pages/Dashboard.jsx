@@ -501,8 +501,8 @@ function Dashboard() {
                 {showReorderModal && (
                     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
                         <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden border border-white/30 flex flex-col">
-                            <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 p-6 sm:p-8 text-white flex-shrink-0">
-                                <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-amber-400 to-red-600 blur-xl opacity-40"></div>
+                            <div style={{ zIndex: '-1' }} className="bg-gradient-to-r  from-amber-500 via-orange-500 to-red-500 p-6 sm:p-8 text-white flex-shrink-0">
+                                <div className="absolute inset-0  bg-gradient-to-r from-amber-400 to-red-600 blur-xl opacity-40"></div>
                                 <div className="relative flex items-center justify-between">
                                     <div className="flex items-center space-x-4">
                                         <div className="bg-white/20 backdrop-blur-sm p-3 rounded-2xl">
