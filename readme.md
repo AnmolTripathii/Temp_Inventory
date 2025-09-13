@@ -157,16 +157,6 @@ cd backend
 npm install
 ```
 
-Create a `.env` file in the backend directory:
-
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/
-DB_NAME=Assingment
-PORT=5000
-NODE_ENV=development
-HF_API_KEY=your_hugging_face_api_key_here
-```
-
 Start the backend server:
 
 ```bash
@@ -297,13 +287,6 @@ npm run dev
 3. Deploy backend to Vercel
 
 ### **Environment Variables for Production**
-
-```env
-MONGODB_URI=your_mongodb_atlas_connection_string
-DB_NAME=Assingment
-NODE_ENV=production
-HF_API_KEY=your_hugging_face_api_key
-```
 
 ## 🎯 Key Features Walkthrough
 
