@@ -192,7 +192,7 @@ function Dashboard() {
 
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
                     <div className="group relative bg-white/80 backdrop-blur-lg p-10 rounded-3xl shadow-2xl border border-white/30 hover:shadow-3xl hover:bg-white/90 transition-all duration-500">
-                        <div className="absolute z-[-1] inset-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div className="absolute  inset-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                         <div className="relative">
                             <div className="flex items-center mb-8">
                                 <div className="relative">
@@ -216,7 +216,7 @@ function Dashboard() {
                                     disabled={loadingReorder}
                                     className="group/btn relative bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-amber-500/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-red-600 rounded-2xl blur-lg opacity-40 group-hover/btn:opacity-60 transition-opacity duration-300"></div>
+                                    <div className="absolute z-[-1] inset-0 bg-gradient-to-r from-amber-400 to-red-600 rounded-2xl blur-lg opacity-40 group-hover/btn:opacity-60 transition-opacity duration-300"></div>
                                     <div className="relative flex items-center space-x-3">
                                         {loadingReorder ? (
                                             <>
